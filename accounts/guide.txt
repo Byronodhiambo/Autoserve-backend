@@ -1,0 +1,27 @@
+register api
+http://127.0.0.1:8000/accounts/register/
+    {
+        "username": "admin",
+        "email": "admin@bot.com",
+        "password": "byron@123"
+    }
+
+login api
+http://127.0.0.1:8000/accounts/login/
+    {
+        "username":"admin",
+        "password":"Password@123"
+    }
+
+password reset endpoint
+http://127.0.0.1:8000/accounts/password_reset/
+    {
+        "email": "admin@bot.com"
+    }
+
+http://127.0.0.1:8000/accounts/password_reset/confirm/ 
+copy token sent to email
+    {
+        "token":"3339e80fe05e5ca9fc74799213f81a093d1f",
+        "password":"byron@123"
+    }
