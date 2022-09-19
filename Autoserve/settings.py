@@ -78,6 +78,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://www.test-cors.org",
+    "http://localhost:3000",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
