@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'products',
     'accounts',
-    'frontend',
     'django_filters',
 ]
 
@@ -94,9 +93,7 @@ ROOT_URLCONF = 'Autoserve.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build')
-        ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -182,9 +179,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static')
-]
 
 # serve media files
 MEDIA_URL = '/media/'
