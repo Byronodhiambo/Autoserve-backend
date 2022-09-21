@@ -1,20 +1,7 @@
-# pull official base image
-FROM node:13.12.0-alpine
-
-# set working directory
+FROM python:3.7
 WORKDIR /app
-
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
-
-# install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install --silent
-RUN npm install react-scripts@3.4.1 -g --silent
-
-# add app
-COPY . ./
-
-# start app
-CMD ["npm", "start"]
+COPY . .
+RUN pip install gunicorn
+RUN pip install -r requirements.txt
+ENV PORT=8080
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 main:app
