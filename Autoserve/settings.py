@@ -79,6 +79,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "https://www.test-cors.org",
     "http://localhost:3000",
+    "https://autoserve-backend-image-khhk6vdera-uc.a.run.app/"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
