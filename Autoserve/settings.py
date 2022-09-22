@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-jc7wpbls1i+n-@8g@vh5g4%l*uuw=t%*)st*q*25o6!b_g1j3g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1:8000','autoserve-backend-image-khhk6vdera-uc.a.run.app']
 
 
 # Application definition
@@ -79,7 +79,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "https://www.test-cors.org",
     "http://localhost:3000",
-    "https://autoserve-backend-image-khhk6vdera-uc.a.run.app/"
+
 ]
 
 CSRF_TRUSTED_ORIGINS = [
