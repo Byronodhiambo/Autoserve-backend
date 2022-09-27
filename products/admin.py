@@ -4,7 +4,7 @@ from django.contrib.auth.models import Group
 # Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['trial_productid_1', 'productname', 'subgroupid', 'productgroupid', 'departmentid', 'picture1', 'picture2', 'standardsaleprice', 'trial_standardcostprice_28']
+    list_display = ['id', 'productname', 'subgroupid', 'productgroupid', 'departmentid', 'picture1', 'picture2', 'price', 'trial_standardcostprice_28']
     list_filter = ['productgroupid', 'departmentid']
 
 class SubgroupmasterAdmin(admin.ModelAdmin):
