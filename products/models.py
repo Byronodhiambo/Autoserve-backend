@@ -186,7 +186,7 @@ class Taxmaster(models.Model):
 
 
 class Productmaster(models.Model):
-    id = models.TextField(primary_key=True)
+    trial_productid_1 = models.TextField(primary_key=True)
     productname = models.TextField(unique=True, blank=True, null=True)
     printname = models.TextField(blank=True, null=True)
     upcean = models.TextField(unique=True)
@@ -212,7 +212,7 @@ class Productmaster(models.Model):
     trial_safetylevel_24 = models.TextField()  # This field type is a guess.
     reorderquantity = models.TextField()  # This field type is a guess.
     minimumorderquantity = models.TextField()  # This field type is a guess.
-    price = models.TextField()  # This field type is a guess.
+    standardsaleprice = models.TextField()  # This field type is a guess.
     trial_standardcostprice_28 = models.TextField()  # This field type is a guess.
     productdiscount = models.TextField()  # This field type is a guess.
     trial_allowoperatordiscount_30 = models.BigIntegerField()

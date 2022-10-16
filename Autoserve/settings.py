@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-jc7wpbls1i+n-@8g@vh5g4%l*uuw=t%*)st*q*25o6!b_g1j3g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000','autoserve-backend-image-khhk6vdera-uc.a.run.app']
+ALLOWED_HOSTS = ['127.0.0.1','autoserve-backend-image-khhk6vdera-uc.a.run.app',"dashboard.heroku.com" ]
 
 
 # Application definition
@@ -78,7 +78,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://www.test-cors.org",
-    "http://localhost:3000",
+    "http://localhost:3000","dashboard.heroku.com",
 
 ]
 
@@ -114,12 +114,12 @@ WSGI_APPLICATION = 'Autoserve.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'clone.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'clone.sqlite3',
+    }
+}
 
 # DATABASES = {
 #     'default': {
@@ -134,16 +134,16 @@ WSGI_APPLICATION = 'Autoserve.wsgi.application'
 # }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'clone',
-        'USER': 'postgres',
-        'PASSWORD': '4321',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'clone',
+#         'USER': 'postgres',
+#         'PASSWORD': '4321',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

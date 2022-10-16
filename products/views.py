@@ -10,7 +10,7 @@ class ProductList(generics.ListAPIView):
     queryset = Productmaster.objects.all()
     serializer_class = ProductmasterSerializer
     lookup_field = 'productname'
-    filterset_fields = ('subgroupid','productname')
+    filterset_fields = ('subgroupid','productgroupid', 'departmentid')
     search_fields = ('subgroupid__subgroupname','productname',)
 
 class SubgroupList(generics.ListAPIView):

@@ -6,7 +6,7 @@ class ProductmasterSerializer(serializers.ModelSerializer):
       
    class Meta:
         model = Productmaster
-        fields = ['id', 'productname', 'subgroupid', 'productgroupid', 'departmentid', 'picture1', 'picture2', 'price', 'trial_standardcostprice_28']
+        fields = ['trial_productid_1', 'productname', 'subgroupid', 'productgroupid', 'departmentid', 'picture1', 'picture2', 'standardsaleprice', 'trial_standardcostprice_28']
         
 class SubgroupmasterSerializer(serializers.ModelSerializer):
    class Meta:
